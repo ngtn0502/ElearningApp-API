@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Angular - The Complete Guide (2021 Edition)",
+    "description": "Master Angular 12 (formerly 'Angular 2') and build awesome, reactive web apps with the successor of Angular.js",
+    "rating": 7,
+    "price": 12.99,
+    "categoryId": 1,
+    "productDetails": [
+      {
+        "id": 1,
+        "details": "Angular is a platform for building mobile and desktop web applications",
+        "productsId": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
+    "description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)",
+    "rating": 8,
+    "price": 12.99,
+    "categoryId": 2,
+    "productDetails": []
+  },
+  {
+    "id": 3,
+    "name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    "description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
+    "rating": 8,
+    "price": 12.99,
+    "categoryId": 1,
+    "productDetails": []
+  }
+]

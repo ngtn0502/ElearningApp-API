@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Angular - The Complete Guide (2021 Edition)",
+    "description": "Master Angular 12 (formerly 'Angular 2') and build awesome, reactive web apps with the successor of Angular.js",
+    "rating": 10,
+    "price": 12.99,
+    "categoryId": 1,
+    "productDetails": [
+      {
+        "id": 1,
+        "details": "This course starts from scratch, you neither need to know Angular 1 nor Angular 2!Angular 12 simply is the latest version of Angular 2, you will learn this amazing framework from the ground up in this course!",
+        "productsId": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
+    "description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
+    "rating": 10,
+    "price": 12.99,
+    "categoryId": 2,
+    "productDetails": [
+      {
+        "id": 1,
+        "details": "Are you tired of boring the outdated and incomplete courses , then let's dive in to the world of Rest Api's. I'm Asfend Microsoft Most Valuable Professional (MVP) and in this course I'll explain what basically the Rest Api is and how you can create the Rest Api's in ASP.NET Core and C#.",
+        "productsId": 1
+      }
+    ]
+  }
+]
