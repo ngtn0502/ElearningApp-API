@@ -34,7 +34,7 @@
         "rating": 8,
         "price": 12.99,
         "categoryId": 2,
-        "productDetails": "This course is the most up-to-date, comprehensive and bestselling React course on Udemy! It was completely updated and re-recorded from the ground up in 2021 - it teaches the very latest version of React with all the core, modern features you need to know! --- This course also comes with two paths which you can take: The 'complete' path (full >40h course) and the 'summary' path (~4h summary module) - you can choose the path that best fits your time requirements! :-) --- React.js is THE most popular JavaScript library you can use and learn these days to build modern, reactive user interfaces for the web.This course teaches you React in-depth, from the ground up, step by step by diving into all the core basics, exploring tons of examples and also introducing you to advanced concepts as well."
+        "productDetails": null
       }
     ]
   },

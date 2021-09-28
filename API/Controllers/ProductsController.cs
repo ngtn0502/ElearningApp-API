@@ -53,6 +53,8 @@ namespace API.Controllers
             product.Rating = newProduct.Rating;
             product.Price = newProduct.Price;
             product.CategoryId = newProduct.CategoryId;
+            product.ImageUrl = newProduct.ImageUrl;
+            product.Instructor = newProduct.Instructor;
 
             await _dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK);
@@ -61,7 +63,7 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _dbContext.Products.FindAsync(id-1);
+            var product = await _dbContext.Products.SingleOrDefaultAsync(i=> i.Id == id);
 
             if (product == null) return StatusCode(StatusCodes.Status400BadRequest);
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# and .NET\\netApp\\API\\API.csproj": {}
+    "E:\\C# and .NET\\netApp - Now\\API\\API.csproj": {}
   },
   "projects": {
-    "E:\\C# and .NET\\netApp\\API\\API.csproj": {
+    "E:\\C# and .NET\\netApp - Now\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# and .NET\\netApp\\API\\API.csproj",
+        "projectUniqueName": "E:\\C# and .NET\\netApp - Now\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\C# and .NET\\netApp\\API\\API.csproj",
+        "projectPath": "E:\\C# and .NET\\netApp - Now\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\C# and .NET\\netApp\\API\\obj\\",
+        "outputPath": "E:\\C# and .NET\\netApp - Now\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

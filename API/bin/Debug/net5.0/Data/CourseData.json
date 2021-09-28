@@ -1,32 +1,38 @@
 [
   {
-    "id": 1,
-    "name": "Angular - The Complete Guide (2021 Edition)",
-    "description": "Master Angular 12 (formerly 'Angular 2') and build awesome, reactive web apps with the successor of Angular.js",
-    "rating": 10,
-    "price": 12.99,
-    "categoryId": 1,
-    "productDetails": [
-      {
-        "id": 1,
-        "details": "This course starts from scratch, you neither need to know Angular 1 nor Angular 2!Angular 12 simply is the latest version of Angular 2, you will learn this amazing framework from the ground up in this course!",
-        "productsId": 1
-      }
-    ]
+    "Name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    "Description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
+    "Rating": 8,
+    "Price": 12.99,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "CategoryId": 1
   },
   {
-    "id": 2,
-    "name": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
-    "description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
-    "rating": 10,
-    "price": 12.99,
-    "categoryId": 2,
-    "productDetails": [
-      {
-        "id": 1,
-        "details": "Are you tired of boring the outdated and incomplete courses , then let's dive in to the world of Rest Api's. I'm Asfend Microsoft Most Valuable Professional (MVP) and in this course I'll explain what basically the Rest Api is and how you can create the Rest Api's in ASP.NET Core and C#.",
-        "productsId": 1
-      }
-    ]
+    "Name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
+    "Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payment and more)",
+    "Rating": 10,
+    "Price": 12.99,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
+    "Instructor": "Jonas Schmedtmann",
+    "CategoryId": 2
+  },
+  {
+    "Name": "The Complete JavaScript Course 2021: From Zero to Expert!",
+    "Description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
+    "Rating": 10,
+    "Price": 14.99,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg",
+    "Instructor": "Jonas Schmedtmann",
+    "CategoryId": 1
+  },
+  {
+    "Name": "Rest Api's in Asp.Net Core and C# 2021 Edition",
+    "Description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
+    "Rating": 7,
+    "Price": 10.99,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
+    "Instructor": "Asfend Yar Hamid",
+    "CategoryId": 2
   }
 ]

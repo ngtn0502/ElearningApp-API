@@ -24,7 +24,10 @@ namespace API.Entities
         public int CategoryId {get; set;}
 
         [Required]
-        public int ImageUrl {get; set;}
+        public string ImageUrl {get; set;}
+
+        [Required]
+        public string Instructor {get; set;}
 
         public ICollection<ProductDetail> ProductDetails { get; set; }
     }
