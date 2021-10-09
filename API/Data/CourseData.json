@@ -1,38 +1,102 @@
 [
   {
-    "Name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
-    "Description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
-    "Rating": 8,
-    "Price": 12.99,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1362070_b9a1_2.jpg",
-    "Instructor": "Maximilian Schwarzmüller",
-    "CategoryId": 1
+    "name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+    "description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
+    "rating": 7,
+    "price": 10.99,
+    "categoryId": 1,
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlY2RowaO2aBgTx1wUBkBENLd2398xqWAJRgkYJcevzUq2lOO6x3pG6-w7q2orDV8-g_w&usqp=CAU",
+    "instructor": "Maximilian Schwarzmüller",
+    "productDetails": []
   },
   {
-    "Name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
-    "Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payment and more)",
-    "Rating": 10,
-    "Price": 12.99,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
-    "Instructor": "Jonas Schmedtmann",
-    "CategoryId": 2
+    "name": "The Complete JavaScript Course 2021: From Zero to Expert!",
+    "description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
+    "rating": 10,
+    "price": 12.99,
+    "categoryId": 1,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg",
+    "instructor": "Jonas Schmedtmann",
+    "productDetails": []
   },
   {
-    "Name": "The Complete JavaScript Course 2021: From Zero to Expert!",
-    "Description": "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
-    "Rating": 10,
-    "Price": 14.99,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg",
-    "Instructor": "Jonas Schmedtmann",
-    "CategoryId": 1
+    "name": "Rest Api's in Asp.Net Core and C# 2021 Edition",
+    "description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
+    "rating": 7,
+    "price": 11.99,
+    "categoryId": 2,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
+    "instructor": "Asfend Yar Hamid",
+    "productDetails": []
   },
   {
-    "Name": "Rest Api's in Asp.Net Core and C# 2021 Edition",
-    "Description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
-    "Rating": 7,
-    "Price": 10.99,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
-    "Instructor": "Asfend Yar Hamid",
-    "CategoryId": 2
+    "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
+    "description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payment and more)",
+    "rating": 9,
+    "price": 10.99,
+    "categoryId": 2,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
+    "instructor": "Jonas Schmedtmann",
+    "productDetails": []
+  },
+  {
+    "name": "Advanced CSS and Sass: Flexbox, Grid, Animations and More!",
+    "description": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.\n",
+    "rating": 8,
+    "price": 12.99,
+    "categoryId": 1,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
+    "instructor": "Jonas Schmedtmann",
+    "productDetails": []
+  },
+  {
+    "name": "JavaScript Algorithms and Data Structures Masterclass",
+    "description": "The Missing Computer Science and Coding Interview Bootcamp",
+    "rating": 8,
+    "price": 11.99,
+    "categoryId": 4,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1406344_1d65_3.jpg",
+    "instructor": "Colt Steele",
+    "productDetails": []
+  },
+  {
+    "name": "SQL - MySQL for Data Analytics and Business Intelligence",
+    "description": "SQL that will get you hired – SQL for Business Analysis, Marketing, and Data Management\n",
+    "rating": 7,
+    "price": 12.99,
+    "categoryId": 2,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1405632_6e6f_2.jpg",
+    "instructor": "365 Careers",
+    "productDetails": []
+  },
+  {
+    "name": "Build an app with ASPNET Core and Angular from scratch",
+    "description": "A practical example of how to build an application with ASP.NET Core API (.Net 5.0) and Angular 10 from start to finish\n",
+    "rating": 8,
+    "price": 12.99,
+    "categoryId": 4,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
+    "instructor": "Neil Cummings",
+    "productDetails": []
+  },
+  {
+    "name": "The Web Developer Bootcamp 2021",
+    "description": "COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS, JS, Node, and More!\n",
+    "rating": 7,
+    "price": 12.99,
+    "categoryId": 4,
+    "imageUrl": "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg",
+    "instructor": "Colt Steele",
+    "productDetails": []
+  },
+  {
+    "name": "Build Responsive Real-World Websites with HTML and CSS",
+    "description": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Includes flexbox and CSS Grid\n",
+    "rating": 8,
+    "price": 12.99,
+    "categoryId": 1,
+    "imageUrl": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
+    "instructor": "Jonas Schmedtmann",
+    "productDetails": []
   }
 ]
