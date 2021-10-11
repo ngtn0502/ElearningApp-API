@@ -19,7 +19,7 @@ namespace API.Services
         }
 
 
-        public string CreatedToken (AppUser user)
+        public string CreatedToken(AppUser user)
         {
             var claims = new List<Claim>
             {
