@@ -6,6 +6,7 @@ using API.Entities;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
 using API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -25,7 +26,6 @@ namespace API.Controllers
             return Ok(products);
         }
 
-        // [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
@@ -33,7 +33,7 @@ namespace API.Controllers
             return Ok(products);
         }
 
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> PostProduct([FromBody] Products product)
         {
@@ -42,7 +42,7 @@ namespace API.Controllers
             return Ok(product);
         }
 
-
+        [Authorize]
         [HttpPut("[action]")]
         public async Task<IActionResult> Edit(int query, [FromBody] Products newProduct)
         {
@@ -62,6 +62,7 @@ namespace API.Controllers
             return Ok(product);
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
