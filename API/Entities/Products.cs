@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace API.Entities
@@ -21,14 +20,15 @@ namespace API.Entities
         public double Price { get; set; }
 
         [Required]
-        public int CategoryId {get; set;}
+        public int CategoryId { get; set; }
 
         [Required]
-        public string ImageUrl {get; set;}
+        public string ImageUrl { get; set; }
 
         [Required]
-        public string Instructor {get; set;}
+        public string Instructor { get; set; }
 
-        public ICollection<ProductDetail> ProductDetails { get; set; }
+        [Required]
+        public string Language { get; set; }
     }
 }

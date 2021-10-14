@@ -22,7 +22,8 @@ namespace API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
+            // var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
+            var products = await _dbContext.Products.ToListAsync();
             return Ok(products);
         }
 
@@ -57,6 +58,7 @@ namespace API.Controllers
             product.CategoryId = newProduct.CategoryId;
             product.ImageUrl = newProduct.ImageUrl;
             product.Instructor = newProduct.Instructor;
+            product.Language = newProduct.Language;
 
             await _dbContext.SaveChangesAsync();
             return Ok(product);
@@ -105,6 +107,7 @@ namespace API.Controllers
                                       CategoryId = product.CategoryId,
                                       ImageUrl = product.ImageUrl,
                                       Instructor = product.Instructor,
+                                      Language = product.Language,
                                   }).ToListAsync();
             return Ok(products);
         }
@@ -116,7 +119,8 @@ namespace API.Controllers
             int currentPageNumber = pageNumber ?? 1;
             int currentpageSize = pageSize ?? 10;
 
-            var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
+            // var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
+            var products = await _dbContext.Products.ToListAsync();
 
             var productsPage = products.Skip((currentPageNumber - 1) * currentpageSize).Take(currentpageSize);
 

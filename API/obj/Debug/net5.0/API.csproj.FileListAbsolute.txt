@@ -71,7 +71,6 @@ E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\appsettings.json
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\Data\UserSeedData.json
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\Data\CategoriesData.json
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\Data\CourseData.json
-E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\Data\ProductsData.json
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\API.exe
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\API.deps.json
 E:\C# and .NET\netApp - Now\API\bin\Debug\net5.0\API.runtimeconfig.json

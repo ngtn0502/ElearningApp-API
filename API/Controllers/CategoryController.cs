@@ -19,7 +19,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            var categories =  await _dbContext.Category.Include(a=>a.Products).ToListAsync();
+            var categories = await _dbContext.Category.Include(a => a.Products).ToListAsync();
             return Ok(categories);
         }
 
@@ -27,7 +27,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(int id)
         {
-            var category =  await _dbContext.Category.FindAsync(id);
+            var category = await _dbContext.Category.FindAsync(id);
             return Ok(category);
         }
 

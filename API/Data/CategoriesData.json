@@ -1,56 +1,18 @@
 [
   {
-    "id": 1,
-    "name": "Front-End",
-    "products": [
-      {
-        "id": 1,
-        "name": "Angular - The Complete Guide (2021 Edition)",
-        "description": "Master Angular 12 (formerly 'Angular 2') and build awesome, reactive web apps with the successor of Angular.js",
-        "rating": 7,
-        "price": 12.99,
-        "categoryId": 1,
-        "productDetails": null
-      },
-      {
-        "id": 3,
-        "name": "React - The Complete Guide (incl Hooks, React Router, Redux)",
-        "description": "Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!",
-        "rating": 8,
-        "price": 12.99,
-        "categoryId": 1,
-        "productDetails": null
-      }
-    ]
+    "Id": 1,
+    "Name": "Front-End"
   },
   {
-    "id": 2,
-    "name": "Back-End",
-    "products": [
-      {
-        "id": 2,
-        "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
-        "description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)",
-        "rating": 8,
-        "price": 12.99,
-        "categoryId": 2,
-        "productDetails": "This course is the most up-to-date, comprehensive and bestselling React course on Udemy! It was completely updated and re-recorded from the ground up in 2021 - it teaches the very latest version of React with all the core, modern features you need to know! --- This course also comes with two paths which you can take: The 'complete' path (full >40h course) and the 'summary' path (~4h summary module) - you can choose the path that best fits your time requirements! :-) --- React.js is THE most popular JavaScript library you can use and learn these days to build modern, reactive user interfaces for the web.This course teaches you React in-depth, from the ground up, step by step by diving into all the core basics, exploring tons of examples and also introducing you to advanced concepts as well."
-      }
-    ]
+    "Id": 2,
+    "Name": "Back-End"
   },
   {
-    "id": 3,
-    "name": "Devop",
-    "products": []
+    "Id": 3,
+    "Name": "Devops"
   },
   {
-    "id": 4,
-    "name": "Android Development",
-    "products": []
-  },
-  {
-    "id": 5,
-    "name": "iOS Development",
-    "products": []
+    "Id": 4,
+    "Name": "Others"
   }
 ]

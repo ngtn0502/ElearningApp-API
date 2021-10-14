@@ -3,14 +3,16 @@ using System;
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20211014080346_update field")]
+    partial class updatefield
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,6 +23,36 @@ namespace API.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("City")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Interests")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Introduction")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("KnownAs")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("LastActive")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LookingFor")
+                        .HasColumnType("TEXT");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("BLOB");
@@ -49,6 +81,31 @@ namespace API.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category");
+                });
+
+            modelBuilder.Entity("API.Entities.Photo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("AppUserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PublicId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("isMain")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.ToTable("Photo");
                 });
 
             modelBuilder.Entity("API.Entities.Products", b =>
@@ -93,6 +150,17 @@ namespace API.Data.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("API.Entities.Photo", b =>
+                {
+                    b.HasOne("API.Entities.AppUser", "AppUser")
+                        .WithMany("Photos")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+                });
+
             modelBuilder.Entity("API.Entities.Products", b =>
                 {
                     b.HasOne("API.Entities.Category", null)
@@ -100,6 +168,11 @@ namespace API.Data.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("API.Entities.AppUser", b =>
+                {
+                    b.Navigation("Photos");
                 });
 
             modelBuilder.Entity("API.Entities.Category", b =>
