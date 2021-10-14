@@ -1,45 +1,6 @@
 [
   {
-    "Name": "Rest Api's in Asp.Net Core and C# 2021 Edition",
-    "Description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
-    "Rating": 7,
-    "Price": 9.99,
-    "CategoryId": 2,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
-    "Instructor": "Asfend Yar Hamid",
-    "Language": "English"
-  },
-  {
-    "Name": "Testing course Name Testing course Name Testing course Name",
-    "Description": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.\n",
-    "Rating": 8,
-    "Price": 12.99,
-    "CategoryId": 1,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
-    "Instructor": "Jonas Schmedtmann",
-    "Language": "English"
-  },
-  {
-    "Name": "JavaScript Algorithms and Data Structures Masterclass",
-    "Description": "The Missing Computer Science and Coding Interview Bootcamp",
-    "Rating": 8,
-    "Price": 9.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1406344_1d65_3.jpg",
-    "Instructor": "Colt Steele",
-    "Language": "English"
-  },
-  {
-    "Name": "SQL - MySQL for Data Analytics and Business Intelligence",
-    "Description": "SQL that will get you hired – SQL for Business Analysis, Marketing, and Data Management\n",
-    "Rating": 7,
-    "Price": 2.99,
-    "CategoryId": 2,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1405632_6e6f_2.jpg",
-    "Instructor": "365 Careers",
-    "Language": "English"
-  },
-  {
+    "Id": 1,
     "Name": "Build an app with ASPNET Core and Angular from scratch",
     "Description": "A practical example of how to build an application with ASP.NET Core API (.Net 5.0) and Angular 10 from start to finish\n",
     "Rating": 8,
@@ -50,106 +11,7 @@
     "Language": "English"
   },
   {
-    "Name": "The Web Developer Bootcamp 2021",
-    "Description": "COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS, JS, Node, and More!\n",
-    "Rating": 7,
-    "Price": 12.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg",
-    "Instructor": "Colt Steele",
-    "Language": "English"
-  },
-  {
-    "Name": "Build Responsive Real-World Websites with HTML and CSS",
-    "Description": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Includes flexbox and CSS Grid\n",
-    "Rating": 8,
-    "Price": 12.99,
-    "CategoryId": 1,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
-    "Instructor": "Jonas Schmedtmann",
-    "Language": "English"
-  },
-  {
-    "Name": "Vue - The Complete Guide (w/ Router, Vuex, Composition API)",
-    "Description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!\n",
-    "Rating": 9,
-    "Price": 13.99,
-    "CategoryId": 1,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/995016_ebf4_3.jpg",
-    "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
-  },
-  {
-    "Name": "The Complete ASP.NET MVC 5 Course",
-    "Description": "Learn to build fast and secure web applications with ASP.NET MVC 5 - The most popular course with 40,000+ students!",
-    "Rating": 6,
-    "Price": 10.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/806922_6310_3.jpg",
-    "Instructor": "Mosh Hamedani",
-    "Language": "English"
-  },
-  {
-    "Name": "Understanding TypeScript - 2021 Edition",
-    "Description": "Don't limit the Usage of TypeScript to Angular! Learn the Basics, its Features, Workflows and how to use it!\n",
-    "Rating": 7,
-    "Price": 10.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/947098_02ec_2.jpg",
-    "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
-  },
-  {
-    "Name": "Angular - The Complete Guide (2021 Edition)",
-    "Description": "Master Angular 12 (formerly \"Angular 2\") and build awesome, reactive web apps with the successor of Angular.js\n",
-    "Rating": 8,
-    "Price": 12.99,
-    "CategoryId": 1,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/756150_c033_2.jpg",
-    "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
-  },
-  {
-    "Name": "The Complete Node.js Developer Course (3rd Edition)",
-    "Description": "Learn Node.js by building real-world applications with Node JS, Express, MongoDB, Jest, and more!\n",
-    "Rating": 8,
-    "Price": 9.99,
-    "CategoryId": 2,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/922484_52a1_8.jpg",
-    "Instructor": "Andrew Mead",
-    "Language": "English"
-  },
-  {
-    "Name": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
-    "Description": "Master Node JS & Deno.js, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!\n",
-    "Rating": 8,
-    "Price": 13.99,
-    "CategoryId": 2,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1879018_95b6_3.jpg",
-    "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
-  },
-  {
-    "Name": "C# Basics for Beginners: Learn C# Fundamentals by Coding",
-    "Description": "Master C# fundamentals in 6 hours - The most popular course with 50,000+ students, packed with tips and exercises!\n",
-    "Rating": 8,
-    "Price": 10.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/382002_5d4a.jpg",
-    "Instructor": "Mosh Hamedani",
-    "Language": "English"
-  },
-  {
-    "Name": "JavaScript: Understanding the Weird Parts",
-    "Description": "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.\n",
-    "Rating": 8,
-    "Price": 14.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg",
-    "Instructor": "Anthony Alicea",
-    "Language": "English"
-  },
-  {
+    "Id": 2,
     "Name": "SASS - The Complete SASS Course (CSS Preprocessor)",
     "Description": "SASS - Learn SASS, the most popular CSS Extension. Build modern and beautiful projects using SASS and lots of CSS\n",
     "Rating": 9,
@@ -160,16 +22,161 @@
     "Language": "English"
   },
   {
-    "Name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
-    "Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payments & more)\n",
+    "Id": 3,
+    "Name": "JavaScript: Understanding the Weird Parts",
+    "Description": "An advanced JavaScript course for everyone! Scope, closures, prototypes, 'this', build your own framework, and more.\n",
     "Rating": 8,
-    "Price": 10.99,
-    "CategoryId": 2,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
-    "Instructor": "Jonas Schmedtmannd",
+    "Price": 14.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg",
+    "Instructor": "Anthony Alicea",
     "Language": "English"
   },
   {
+    "Id": 4,
+    "Name": "C# Basics for Beginners: Learn C# Fundamentals by Coding",
+    "Description": "Master C# fundamentals in 6 hours - The most popular course with 50,000+ students, packed with tips and exercises!\n",
+    "Rating": 8,
+    "Price": 10.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/382002_5d4a.jpg",
+    "Instructor": "Mosh Hamedani",
+    "Language": "English"
+  },
+  {
+    "Id": 5,
+    "Name": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+    "Description": "Master Node JS & Deno.js, build REST APIs with Node.js, GraphQL APIs, add Authentication, use MongoDB, SQL & much more!\n",
+    "Rating": 8,
+    "Price": 13.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1879018_95b6_3.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "Language": "English"
+  },
+  {
+    "Id": 6,
+    "Name": "The Complete Node.js Developer Course (3rd Edition)",
+    "Description": "Learn Node.js by building real-world applications with Node JS, Express, MongoDB, Jest, and more!\n",
+    "Rating": 8,
+    "Price": 9.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/922484_52a1_8.jpg",
+    "Instructor": "Andrew Mead",
+    "Language": "English"
+  },
+  {
+    "Id": 7,
+    "Name": "Angular - The Complete Guide (2021 Edition)",
+    "Description": "Master Angular 12 (formerly \"Angular 2\") and build awesome, reactive web apps with the successor of Angular.js\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/756150_c033_2.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "Language": "English"
+  },
+  {
+    "Id": 8,
+    "Name": "Understanding TypeScript - 2021 Edition",
+    "Description": "Don't limit the Usage of TypeScript to Angular! Learn the Basics, its Features, Workflows and how to use it!\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/947098_02ec_2.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "Language": "English"
+  },
+  {
+    "Id": 9,
+    "Name": "The Complete ASP.NET MVC 5 Course",
+    "Description": "Learn to build fast and secure web applications with ASP.NET MVC 5 - The most popular course with 40,000+ students!",
+    "Rating": 6,
+    "Price": 10.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/806922_6310_3.jpg",
+    "Instructor": "Mosh Hamedani",
+    "Language": "English"
+  },
+  {
+    "Id": 10,
+    "Name": "Vue - The Complete Guide (w/ Router, Vuex, Composition API)",
+    "Description": "Vue.js is an awesome JavaScript Framework for building Frontend Applications! VueJS mixes the Best of Angular + React!\n",
+    "Rating": 9,
+    "Price": 13.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/995016_ebf4_3.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "Language": "English"
+  },
+  {
+    "Id": 11,
+    "Name": "Build Responsive Real-World Websites with HTML and CSS",
+    "Description": "Learn modern HTML5, CSS3 and web design by building a stunning website for your portfolio! Includes flexbox and CSS Grid\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
+    "Instructor": "Jonas Schmedtmann",
+    "Language": "English"
+  },
+  {
+    "Id": 12,
+    "Name": "The Web Developer Bootcamp 2021",
+    "Description": "COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS, JS, Node, and More!\n",
+    "Rating": 7,
+    "Price": 12.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg",
+    "Instructor": "Colt Steele",
+    "Language": "English"
+  },
+  {
+    "Id": 13,
+    "Name": "Rest Api's in Asp.Net Core and C# 2021 Edition",
+    "Description": "Build REST Api's with Asp.Net Core , Entity Framework Core and C#",
+    "Rating": 7,
+    "Price": 9.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
+    "Instructor": "Asfend Yar Hamid",
+    "Language": "English"
+  },
+  {
+    "Id": 14,
+    "Name": "Testing course Name Testing course Name Testing course Name",
+    "Description": "The most advanced and modern CSS course on the internet: master flexbox, CSS Grid, responsive design, and so much more.\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
+    "Instructor": "Jonas Schmedtmann",
+    "Language": "English"
+  },
+  {
+    "Id": 15,
+    "Name": "JavaScript Algorithms and Data Structures Masterclass",
+    "Description": "The Missing Computer Science and Coding Interview Bootcamp",
+    "Rating": 8,
+    "Price": 9.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1406344_1d65_3.jpg",
+    "Instructor": "Colt Steele",
+    "Language": "English"
+  },
+  {
+    "Id": 16,
+    "Name": "SQL - MySQL for Data Analytics and Business Intelligence",
+    "Description": "SQL that will get you hired – SQL for Business Analysis, Marketing, and Data Management\n",
+    "Rating": 7,
+    "Price": 2.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1405632_6e6f_2.jpg",
+    "Instructor": "365 Careers",
+    "Language": "English"
+  },
+  {
+    "Id": 18,
     "Name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2021",
     "Description": "Master Node by building a real-world RESTful API and web app (with authentication, Node.js security, payment and more)",
     "Rating": 10,

@@ -69,9 +69,6 @@ namespace API.Controllers
             };
         }
 
-
-
-
         private async Task<bool> isUsernameTaken(string username)
         {
             return await _dbContext.Users.AnyAsync(x => x.UserName == username.ToLower());

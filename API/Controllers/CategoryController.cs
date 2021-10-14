@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using API.Data;
-using Microsoft.EntityFrameworkCore;
 using API.Entities;
 using Microsoft.AspNetCore.Http;
+using API.Interfaces;
 
 namespace API.Controllers
 {
@@ -11,15 +11,18 @@ namespace API.Controllers
     public class CategoryController : BaseAPIController
     {
         private readonly DataContext _dbContext;
-        public CategoryController(DataContext dbContext)
+        private readonly ICategoryRepository _categoryRepository;
+
+        public CategoryController(DataContext dbContext, ICategoryRepository categoryRepository)
         {
             _dbContext = dbContext;
+            _categoryRepository = categoryRepository;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            var categories = await _dbContext.Category.Include(a => a.Products).ToListAsync();
+            var categories = await _categoryRepository.GetCategoryAsync();
             return Ok(categories);
         }
 
@@ -27,16 +30,19 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(int id)
         {
-            var category = await _dbContext.Category.FindAsync(id);
+            var category = await _categoryRepository.GetCategoryByIdAsync(id);
+
+            if (category == null) return StatusCode(StatusCodes.Status400BadRequest);
+
             return Ok(category);
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostCategory([FromBody] Category category)
+        public async Task<IActionResult> PostCategory([FromBody] Category newCategory)
         {
-            await _dbContext.Category.AddAsync(category);
-            await _dbContext.SaveChangesAsync();
-            return StatusCode(StatusCodes.Status201Created);
+            var category = await _categoryRepository.PostCategoryAsync(newCategory);
+
+            return Ok(category);
         }
     }
 }

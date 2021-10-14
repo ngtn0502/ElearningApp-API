@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using System.Linq;
 using API.DTOs;
 using Microsoft.AspNetCore.Authorization;
+using API.Interfaces;
 
 namespace API.Controllers
 {
@@ -14,23 +15,25 @@ namespace API.Controllers
     public class ProductsController : BaseAPIController
     {
         private readonly DataContext _dbContext;
-        public ProductsController(DataContext dbContext)
+        private readonly IProductRepository _productRepository;
+
+        public ProductsController(DataContext dbContext, IProductRepository productRepository)
         {
             _dbContext = dbContext;
+            _productRepository = productRepository;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            // var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
-            var products = await _dbContext.Products.ToListAsync();
+            var products = await _productRepository.GetProductsAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
-            var products = await _dbContext.Products.FindAsync(id);
+            var products = await _productRepository.GetProductByIdAsync(id);
             return Ok(products);
         }
 
@@ -38,29 +41,20 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> PostProduct([FromBody] Products product)
         {
-            await _dbContext.Products.AddAsync(product);
-            await _dbContext.SaveChangesAsync();
-            return Ok(product);
+            return Ok(await _productRepository.PostProductAsync(product));
         }
 
         [Authorize]
         [HttpPut("[action]")]
         public async Task<IActionResult> Edit(int query, [FromBody] Products newProduct)
         {
-            var product = await _dbContext.Products.FindAsync(query);
+            var product = await _productRepository.EditProductAsync(query, newProduct);
 
-            if (product == null) return StatusCode(StatusCodes.Status400BadRequest);
+            if (product == null)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest);
+            }
 
-            product.Name = newProduct.Name;
-            product.Description = newProduct.Description;
-            product.Rating = newProduct.Rating;
-            product.Price = newProduct.Price;
-            product.CategoryId = newProduct.CategoryId;
-            product.ImageUrl = newProduct.ImageUrl;
-            product.Instructor = newProduct.Instructor;
-            product.Language = newProduct.Language;
-
-            await _dbContext.SaveChangesAsync();
             return Ok(product);
         }
 
@@ -68,58 +62,27 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _dbContext.Products.SingleOrDefaultAsync(i => i.Id == id);
+            var deleteResponse = await _productRepository.DeleteProductAsync(id);
 
-            if (product == null) return StatusCode(StatusCodes.Status400BadRequest);
+            if (deleteResponse == null) return StatusCode(StatusCodes.Status400BadRequest);
 
-            _dbContext.Remove(product);
-
-            await _dbContext.SaveChangesAsync();
-
-            var returnedObj = new DeleteResponse
-            {
-                id = product.Id
-            };
-
-            return Ok(returnedObj);
+            return Ok(deleteResponse);
         }
 
         [HttpGet("[action]")]
         public async Task<IActionResult> Search(string query)
         {
-            var products = await (from product in _dbContext.Products
-                                  where
-                                  (
-                                  product.Name.ToLower().Contains
-                                  (query.ToLower())
-                                  ||
-                                  product.Description.ToLower().Contains(query.ToLower())
-                                  ||
-                                  product.Instructor.ToLower().Contains(query.ToLower())
-                                  )
-                                  select new
-                                  {
-                                      Id = product.Id,
-                                      Name = product.Name,
-                                      Description = product.Description,
-                                      Rating = product.Rating,
-                                      Price = product.Price,
-                                      CategoryId = product.CategoryId,
-                                      ImageUrl = product.ImageUrl,
-                                      Instructor = product.Instructor,
-                                      Language = product.Language,
-                                  }).ToListAsync();
+            var products = await _productRepository.SearchProductAsync(query);
             return Ok(products);
         }
 
-        // Pagination
+        // Useless now - for reference purpose
         [HttpGet("[action]")]
         public async Task<IActionResult> Page(int? pageNumber, int? pageSize)
         {
             int currentPageNumber = pageNumber ?? 1;
             int currentpageSize = pageSize ?? 10;
 
-            // var products = await _dbContext.Products.Include(a => a.ProductDetails).ToListAsync();
             var products = await _dbContext.Products.ToListAsync();
 
             var productsPage = products.Skip((currentPageNumber - 1) * currentpageSize).Take(currentpageSize);
@@ -134,31 +97,11 @@ namespace API.Controllers
             return Ok(response);
         }
 
+        // Pagination
         [HttpGet("[action]")]
         public async Task<IActionResult> Courses(int category, int? pageNumber, int? pageSize)
         {
-            int currentPageNumber = pageNumber ?? 1;
-            int currentpageSize = pageSize ?? 3;
-
-            var products = await _dbContext.Products.ToListAsync();
-
-            if (category != 0)
-            {
-                products = await _dbContext.Products.Where(x => x.CategoryId == category).ToListAsync();
-            }
-
-            var productsPage = products
-            .Skip((currentPageNumber - 1) * currentpageSize)
-            .Take(currentpageSize);
-
-            var response = new PageResponse
-            {
-                PageNumber = currentPageNumber,
-                TotalRecords = products.Count,
-                Products = productsPage
-            };
-
-            return Ok(response);
+            return Ok(await _productRepository.GetCoursesAsync(category, pageNumber, pageSize));
         }
     }
 }
