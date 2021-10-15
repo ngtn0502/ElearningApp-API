@@ -9,7 +9,6 @@ namespace API.Interfaces
     {
         void Update(Products product);
 
-        Task<bool> SaveAllAsync();
 
         Task<IEnumerable<Products>> GetProductsAsync();
 

@@ -185,5 +185,82 @@
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
     "Instructor": "Jonas Schmedtmann",
     "Language": "English"
+  },
+  {
+    "Id": 19,
+    "Name": "Ultimate Web Designer & Web Developer Course for 2021",
+    "Description": "Become a Full-Stack Web Designer - Learn Everything from Web Design Fundamentals to Front-End Web Development\n",
+    "Rating": 8,
+    "Price": 13.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/446134_383c_3.jpg",
+    "Instructor": "Brad Hussey",
+    "Language": "English"
+  },
+  {
+    "Id": 20,
+    "Name": "JavaScript - The Complete Guide 2021 (Beginner + Advanced)",
+    "Description": "Modern JavaScript from the beginning - all the way up to JS expert level! THE must-have JavaScript resource in 2021.\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2508942_11d3_3.jpg",
+    "Instructor": "Maximilian Schwarzmüller",
+    "Language": "English"
+  },
+  {
+    "Id": 21,
+    "Name": "The Modern JavaScript Bootcamp",
+    "Description": "Learn JavaScript by building real-world apps. Includes 3 real-world projects, 80 programming challenges, and ES6/ES7!\n",
+    "Rating": 9,
+    "Price": 12.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1470810_a8b0.jpg",
+    "Instructor": "Andrew Mead",
+    "Language": "English"
+  },
+  {
+    "Id": 22,
+    "Name": "Modern React with Redux",
+    "Description": "Master React and Redux with React Router, Webpack, and Create-React-App. Includes Hooks!\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/705264_caa9_11.jpg",
+    "Instructor": "Stephen Grider",
+    "Language": "English"
+  },
+  {
+    "Id": 23,
+    "Name": "Build Web Apps with Vue JS 3 & Firebase",
+    "Description": "Learn Vue JS 3 & Firebase by creating & deploying dynamic web apps (including Authentication).\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1639836_a03e_5.jpg",
+    "Instructor": "The Net Ninja (Shaun Pelling)",
+    "Language": "English"
+  },
+  {
+    "Id": 24,
+    "Name": "GitLab CI: Pipelines, CI/CD and DevOps for Beginners",
+    "Description": "Learn GitLab CI / CD with Docker & DevOps: obtain valuable DevOps skills. Build pipelines.\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 3,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2309602_ed2d_2.jpg",
+    "Instructor": "Valentin Despa",
+    "Language": "English"
+  },
+  {
+    "Id": 25,
+    "Name": "Terraform on Azure with IaC DevOps SRE | Real-World 25 Demos",
+    "Description": "Load Balancer, Application Gateway, Traffic Manager, VM, VMSS, Azure DevOps, MySQL Server, DNS Zones, IaC, NAT Gateway",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 3,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/4061318_8089_2.jpg",
+    "Instructor": "Kalyan Reddy Daida",
+    "Language": "English"
   }
 ]

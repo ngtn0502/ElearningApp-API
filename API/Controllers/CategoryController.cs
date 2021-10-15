@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Http;
 using API.Interfaces;
@@ -10,19 +9,17 @@ namespace API.Controllers
 
     public class CategoryController : BaseAPIController
     {
-        private readonly DataContext _dbContext;
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CategoryController(DataContext dbContext, ICategoryRepository categoryRepository)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            _dbContext = dbContext;
-            _categoryRepository = categoryRepository;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetCategories()
         {
-            var categories = await _categoryRepository.GetCategoryAsync();
+            var categories = await _unitOfWork.CategoryRepository.GetCategoryAsync();
             return Ok(categories);
         }
 
@@ -30,7 +27,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCategory(int id)
         {
-            var category = await _categoryRepository.GetCategoryByIdAsync(id);
+            var category = await _unitOfWork.CategoryRepository.GetCategoryByIdAsync(id);
 
             if (category == null) return StatusCode(StatusCodes.Status400BadRequest);
 
@@ -40,7 +37,9 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> PostCategory([FromBody] Category newCategory)
         {
-            var category = await _categoryRepository.PostCategoryAsync(newCategory);
+            var category = await _unitOfWork.CategoryRepository.PostCategoryAsync(newCategory);
+
+            await this._unitOfWork.Complete();
 
             return Ok(category);
         }

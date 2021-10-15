@@ -20,11 +20,6 @@ namespace API.Data.Repository
 
         }
 
-        async Task<bool> ICategoryRepository.SaveAllAsync()
-        {
-            return await _context.SaveChangesAsync() > 0;
-        }
-
         async Task<IEnumerable<Category>> ICategoryRepository.GetCategoryAsync()
         {
             return await _context.Category.Include(a => a.Products).ToListAsync();
@@ -41,7 +36,6 @@ namespace API.Data.Repository
         async Task<Category> ICategoryRepository.PostCategoryAsync(Category category)
         {
             await _context.Category.AddAsync(category);
-            await _context.SaveChangesAsync();
             return category;
         }
     }

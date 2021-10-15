@@ -25,11 +25,6 @@ namespace API.Data
             return await _context.Products.FindAsync(id);
         }
 
-        async Task<bool> IProductRepository.SaveAllAsync()
-        {
-            return await _context.SaveChangesAsync() > 0;
-        }
-
 
         void IProductRepository.Update(Products product)
         {
@@ -39,7 +34,6 @@ namespace API.Data
         async Task<Products> IProductRepository.PostProductAsync(Products product)
         {
             await _context.Products.AddAsync(product);
-            await _context.SaveChangesAsync();
             return product;
         }
 
@@ -58,7 +52,6 @@ namespace API.Data
             product.Instructor = newProduct.Instructor;
             product.Language = newProduct.Language;
 
-            await _context.SaveChangesAsync();
 
             return product;
         }
@@ -71,8 +64,6 @@ namespace API.Data
             if (product == null) return null;
 
             _context.Remove(product);
-
-            await _context.SaveChangesAsync();
 
             var returnedObj = new DeleteResponse
             {
@@ -94,18 +85,7 @@ namespace API.Data
                                   ||
                                   product.Instructor.ToLower().Contains(query.ToLower())
                                   )
-                                  select new Products
-                                  {
-                                      Id = product.Id,
-                                      Name = product.Name,
-                                      Description = product.Description,
-                                      Rating = product.Rating,
-                                      Price = product.Price,
-                                      CategoryId = product.CategoryId,
-                                      ImageUrl = product.ImageUrl,
-                                      Instructor = product.Instructor,
-                                      Language = product.Language,
-                                  }).ToListAsync();
+                                  select product).ToListAsync();
             return products;
         }
 

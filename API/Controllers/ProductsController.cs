@@ -1,11 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using API.Data;
-using Microsoft.EntityFrameworkCore;
 using API.Entities;
 using Microsoft.AspNetCore.Http;
-using System.Linq;
-using API.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using API.Interfaces;
 
@@ -14,47 +10,47 @@ namespace API.Controllers
 
     public class ProductsController : BaseAPIController
     {
-        private readonly DataContext _dbContext;
-        private readonly IProductRepository _productRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public ProductsController(DataContext dbContext, IProductRepository productRepository)
+        public ProductsController(IUnitOfWork unitOfWork)
         {
-            _dbContext = dbContext;
-            _productRepository = productRepository;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetProducts()
         {
-            var products = await _productRepository.GetProductsAsync();
+            var products = await _unitOfWork.ProductRepository.GetProductsAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
-            var products = await _productRepository.GetProductByIdAsync(id);
+            var products = await _unitOfWork.ProductRepository.GetProductByIdAsync(id);
             return Ok(products);
         }
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> PostProduct([FromBody] Products product)
+        public async Task<IActionResult> PostProduct([FromBody] Products newProduct)
         {
-            return Ok(await _productRepository.PostProductAsync(product));
+            var product = await _unitOfWork.ProductRepository.PostProductAsync(newProduct);
+            await this._unitOfWork.Complete();
+            return Ok(product);
         }
 
         [Authorize]
         [HttpPut("[action]")]
         public async Task<IActionResult> Edit(int query, [FromBody] Products newProduct)
         {
-            var product = await _productRepository.EditProductAsync(query, newProduct);
+            var product = await _unitOfWork.ProductRepository.EditProductAsync(query, newProduct);
 
             if (product == null)
             {
                 return StatusCode(StatusCodes.Status400BadRequest);
             }
-
+            await this._unitOfWork.Complete();
             return Ok(product);
         }
 
@@ -62,9 +58,11 @@ namespace API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleteResponse = await _productRepository.DeleteProductAsync(id);
+            var deleteResponse = await _unitOfWork.ProductRepository.DeleteProductAsync(id);
 
             if (deleteResponse == null) return StatusCode(StatusCodes.Status400BadRequest);
+
+            await this._unitOfWork.Complete();
 
             return Ok(deleteResponse);
         }
@@ -72,36 +70,36 @@ namespace API.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> Search(string query)
         {
-            var products = await _productRepository.SearchProductAsync(query);
+            var products = await _unitOfWork.ProductRepository.SearchProductAsync(query);
             return Ok(products);
         }
 
         // Useless now - for reference purpose
-        [HttpGet("[action]")]
-        public async Task<IActionResult> Page(int? pageNumber, int? pageSize)
-        {
-            int currentPageNumber = pageNumber ?? 1;
-            int currentpageSize = pageSize ?? 10;
+        // [HttpGet("[action]")]
+        // public async Task<IActionResult> Page(int? pageNumber, int? pageSize)
+        // {
+        //     int currentPageNumber = pageNumber ?? 1;
+        //     int currentpageSize = pageSize ?? 10;
 
-            var products = await _dbContext.Products.ToListAsync();
+        //     var products = await _dbContext.Products.ToListAsync();
 
-            var productsPage = products.Skip((currentPageNumber - 1) * currentpageSize).Take(currentpageSize);
+        //     var productsPage = products.Skip((currentPageNumber - 1) * currentpageSize).Take(currentpageSize);
 
-            var response = new PageResponse
-            {
-                PageNumber = pageNumber,
-                TotalRecords = products.Count,
-                Products = productsPage
-            };
+        //     var response = new PageResponse
+        //     {
+        //         PageNumber = pageNumber,
+        //         TotalRecords = products.Count,
+        //         Products = productsPage
+        //     };
 
-            return Ok(response);
-        }
+        //     return Ok(response);
+        // }
 
         // Pagination
         [HttpGet("[action]")]
         public async Task<IActionResult> Courses(int category, int? pageNumber, int? pageSize)
         {
-            return Ok(await _productRepository.GetCoursesAsync(category, pageNumber, pageSize));
+            return Ok(await _unitOfWork.ProductRepository.GetCoursesAsync(category, pageNumber, pageSize));
         }
     }
 }

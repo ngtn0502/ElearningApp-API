@@ -8,8 +8,6 @@ namespace API.Interfaces
     {
         void Update(Category category);
 
-        Task<bool> SaveAllAsync();
-
         Task<IEnumerable<Category>> GetCategoryAsync();
 
         Task<Category> GetCategoryByIdAsync(int id);
