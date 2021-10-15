@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using API.DTOs;
 using API.Entities;
@@ -15,9 +14,10 @@ namespace API.Data
         {
             _context = context;
         }
-        async Task<IEnumerable<Products>> IProductRepository.GetProductsAsync()
+        async Task<IQueryable<Products>> IProductRepository.GetProductsAsync()
         {
-            return await _context.Products.ToListAsync();
+            var products = await _context.Products.ToListAsync();
+            return products.AsQueryable();
         }
 
         async Task<Products> IProductRepository.GetProductByIdAsync(int id)
@@ -73,8 +73,11 @@ namespace API.Data
             return returnedObj;
         }
 
-        async Task<IEnumerable<Products>> IProductRepository.SearchProductAsync(string query)
+        async Task<PageResponse> IProductRepository.SearchProductAsync(string query, int? pageNumber, int? pageSize)
         {
+            int currentPageNumber = pageNumber ?? 1;
+            int currentpageSize = pageSize ?? 3;
+
             var products = await (from product in _context.Products
                                   where
                                   (
@@ -86,7 +89,18 @@ namespace API.Data
                                   product.Instructor.ToLower().Contains(query.ToLower())
                                   )
                                   select product).ToListAsync();
-            return products;
+
+            var productsPage = products
+                  .Skip((currentPageNumber - 1) * currentpageSize)
+                  .Take(currentpageSize).AsQueryable();
+
+            var response = new PageResponse
+            {
+                PageNumber = currentPageNumber,
+                TotalRecords = products.Count,
+                Products = productsPage
+            };
+            return response;
         }
 
         async Task<PageResponse> IProductRepository.GetCoursesAsync(int category, int? pageNumber, int? pageSize)
@@ -103,7 +117,7 @@ namespace API.Data
 
             var productsPage = products
             .Skip((currentPageNumber - 1) * currentpageSize)
-            .Take(currentpageSize);
+            .Take(currentpageSize).AsQueryable();
 
             var response = new PageResponse
             {

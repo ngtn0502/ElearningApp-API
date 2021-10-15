@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using API.DTOs;
 using API.Entities;
@@ -10,7 +10,7 @@ namespace API.Interfaces
         void Update(Products product);
 
 
-        Task<IEnumerable<Products>> GetProductsAsync();
+        Task<IQueryable<Products>> GetProductsAsync();
 
         Task<Products> GetProductByIdAsync(int id);
 
@@ -20,7 +20,7 @@ namespace API.Interfaces
 
         Task<DeleteResponse> DeleteProductAsync(int id);
 
-        Task<IEnumerable<Products>> SearchProductAsync(string query);
+        Task<PageResponse> SearchProductAsync(string query, int? pageNumber, int? pageSize);
 
         Task<PageResponse> GetCoursesAsync(int category, int? pageNumber, int? pageSize);
 

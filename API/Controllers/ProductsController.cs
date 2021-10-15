@@ -68,9 +68,9 @@ namespace API.Controllers
         }
 
         [HttpGet("[action]")]
-        public async Task<IActionResult> Search(string query)
+        public async Task<IActionResult> Search(string query, int? pageNumber, int? pageSize)
         {
-            var products = await _unitOfWork.ProductRepository.SearchProductAsync(query);
+            var products = await _unitOfWork.ProductRepository.SearchProductAsync(query, pageNumber, pageSize);
             return Ok(products);
         }
 

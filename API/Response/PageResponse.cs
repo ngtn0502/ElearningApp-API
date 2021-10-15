@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Linq;
 using API.Entities;
 
 namespace API.DTOs
@@ -7,8 +7,8 @@ namespace API.DTOs
     {
         public int? PageNumber { get; set; }
 
-        public int? TotalRecords {get; set;}
+        public int? TotalRecords { get; set; }
 
-        public IEnumerable<Products> Products {get;set;}
+        public IQueryable<Products> Products { get; set; }
     }
 }

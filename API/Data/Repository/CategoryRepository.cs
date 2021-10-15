@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using API.Entities;
 using API.Interfaces;
@@ -20,9 +20,10 @@ namespace API.Data.Repository
 
         }
 
-        async Task<IEnumerable<Category>> ICategoryRepository.GetCategoryAsync()
+        async Task<IQueryable<Category>> ICategoryRepository.GetCategoryAsync()
         {
-            return await _context.Category.Include(a => a.Products).ToListAsync();
+            var categories = await _context.Category.Include(a => a.Products).ToListAsync();
+            return categories.AsQueryable();
         }
 
         async Task<Category> ICategoryRepository.GetCategoryByIdAsync(int id)
@@ -37,6 +38,11 @@ namespace API.Data.Repository
         {
             await _context.Category.AddAsync(category);
             return category;
+        }
+
+        public Task<IQueryable<Category>> GetCategoryAsync()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
