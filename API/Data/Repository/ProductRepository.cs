@@ -4,6 +4,7 @@ using API.Entities;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using API.Helpers;
 
 namespace API.Data
 {
@@ -14,30 +15,30 @@ namespace API.Data
         {
             _context = context;
         }
-        async Task<IQueryable<Products>> IProductRepository.GetProductsAsync()
+        async Task<IQueryable<Product>> IProductRepository.GetProductsAsync()
         {
             var products = await _context.Products.ToListAsync();
             return products.AsQueryable();
         }
 
-        async Task<Products> IProductRepository.GetProductByIdAsync(int id)
+        async Task<Product> IProductRepository.GetProductByIdAsync(int id)
         {
             return await _context.Products.FindAsync(id);
         }
 
 
-        void IProductRepository.Update(Products product)
+        void IProductRepository.Update(Product product)
         {
             _context.Entry(product).State = EntityState.Modified;
         }
 
-        async Task<Products> IProductRepository.PostProductAsync(Products product)
+        async Task<Product> IProductRepository.PostProductAsync(Product product)
         {
             await _context.Products.AddAsync(product);
             return product;
         }
 
-        async Task<Products> IProductRepository.EditProductAsync(int id, Products newProduct)
+        async Task<Product> IProductRepository.EditProductAsync(int id, Product newProduct)
         {
             var product = await _context.Products.FindAsync(id);
 
@@ -75,8 +76,6 @@ namespace API.Data
 
         async Task<PageResponse> IProductRepository.SearchProductAsync(string query, int? pageNumber, int? pageSize)
         {
-            int currentPageNumber = pageNumber ?? 1;
-            int currentpageSize = pageSize ?? 3;
 
             var products = await (from product in _context.Products
                                   where
@@ -90,23 +89,12 @@ namespace API.Data
                                   )
                                   select product).ToListAsync();
 
-            var productsPage = products
-                  .Skip((currentPageNumber - 1) * currentpageSize)
-                  .Take(currentpageSize).AsQueryable();
 
-            var response = new PageResponse
-            {
-                PageNumber = currentPageNumber,
-                TotalRecords = products.Count,
-                Products = productsPage
-            };
-            return response;
+            return PagedList.CreatePagedResponse(products, pageNumber, pageSize);
         }
 
         async Task<PageResponse> IProductRepository.GetCoursesAsync(int category, int? pageNumber, int? pageSize)
         {
-            int currentPageNumber = pageNumber ?? 1;
-            int currentpageSize = pageSize ?? 3;
 
             var products = await _context.Products.ToListAsync();
 
@@ -115,20 +103,17 @@ namespace API.Data
                 products = await _context.Products.Where(x => x.CategoryId == category).ToListAsync();
             }
 
-            var productsPage = products
-            .Skip((currentPageNumber - 1) * currentpageSize)
-            .Take(currentpageSize).AsQueryable();
-
-            var response = new PageResponse
-            {
-                PageNumber = currentPageNumber,
-                TotalRecords = products.Count,
-                Products = productsPage
-            };
-
-            return response;
+            return PagedList.CreatePagedResponse(products, pageNumber, pageSize);
         }
 
+        public Task<IQueryable<Product>> GetProductAsync()
+        {
+            throw new System.NotImplementedException();
+        }
 
+        public Task<Product> PostProductAsync(Product product)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

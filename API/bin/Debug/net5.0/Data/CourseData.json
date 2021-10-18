@@ -1,16 +1,5 @@
 [
   {
-    "Id": 1,
-    "Name": "Build an app with ASPNET Core and Angular from scratch",
-    "Description": "A practical example of how to build an application with ASP.NET Core API (.Net 5.0) and Angular 10 from start to finish\n",
-    "Rating": 8,
-    "Price": 13.99,
-    "CategoryId": 4,
-    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
-    "Instructor": "Neil Cummings",
-    "Language": "English"
-  },
-  {
     "Id": 2,
     "Name": "SASS - The Complete SASS Course (CSS Preprocessor)",
     "Description": "SASS - Learn SASS, the most popular CSS Extension. Build modern and beautiful projects using SASS and lots of CSS\n",
@@ -125,7 +114,7 @@
     "Name": "The Web Developer Bootcamp 2021",
     "Description": "COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS, JS, Node, and More!\n",
     "Rating": 7,
-    "Price": 12.99,
+    "Price": 11.99,
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg",
     "Instructor": "Colt Steele",
@@ -261,6 +250,215 @@
     "CategoryId": 3,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/4061318_8089_2.jpg",
     "Instructor": "Kalyan Reddy Daida",
+    "Language": "English"
+  },
+  {
+    "Id": 26,
+    "Name": "Build an app with ASPNET Core and Angular from scratch",
+    "Description": "A practical example of how to build an application with ASP.NET Core API (.Net 5.0) and Angular 10 from start to finish\n",
+    "Rating": 8,
+    "Price": 10.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
+    "Instructor": "Neil Cummings",
+    "Language": "English"
+  },
+  {
+    "Id": 27,
+    "Name": "Reactive Angular Course (with RxJs)",
+    "Description": "Build Angular 12 Applications in Reactive style with plain RxJs - Patterns, Anti-Patterns, Lightweight State Management\n",
+    "Rating": 8,
+    "Price": 10.99,
+    "CategoryId": 1,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1123098_8299_3.jpg",
+    "Instructor": "Angular University",
+    "Language": "English"
+  },
+  {
+    "Id": 28,
+    "Name": "2021 Complete Python Bootcamp From Zero to Hero in Python",
+    "Description": "Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games\n",
+    "Rating": 7,
+    "Price": 18.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg",
+    "Instructor": "Jose Portilla",
+    "Language": "English"
+  },
+  {
+    "Id": 29,
+    "Name": "Automate the Boring Stuff with Python Programming",
+    "Description": "A practical programming course for office workers, academics, and administrators who want to improve their productivity.\n",
+    "Rating": 7,
+    "Price": 18.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/543600_64d1_4.jpg",
+    "Instructor": "Al Sweigart",
+    "Language": "English"
+  },
+  {
+    "Id": 30,
+    "Name": "Complete C# Unity Game Developer 2D",
+    "Description": "Learn Unity in C# & Code Your First Seven 2D Video Games for Web, Mac & PC. The Tutorials Cover Tilemap (35 hours)\n",
+    "Rating": 6,
+    "Price": 10.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/258316_55e9_11.jpg",
+    "Instructor": "Ben Tristem",
+    "Language": "English"
+  },
+  {
+    "Id": 31,
+    "Name": "Complete C# Masterclass",
+    "Description": "Learn C# Programming - WPF, Databases, Linq, Collections, Game Development with Unity. More than just the C# basics!\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1581488_e3e1_2.jpg",
+    "Instructor": "Denis Panjuta",
+    "Language": "English"
+  },
+  {
+    "Id": 32,
+    "Name": "100 Days of Code - The Complete Python Pro Bootcamp for 2021",
+    "Description": "Master Python by building 100 projects in 100 days. Learn to build websites, games, apps, plus scraping and data science\n",
+    "Rating": 10,
+    "Price": 14.99,
+    "CategoryId": 5,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2776760_f176_6.jpg",
+    "Instructor": "Dr. Angela Yu",
+    "Language": "English"
+  },
+  {
+    "Id": 33,
+    "Name": "The Complete 2021 Web Development Bootcamp",
+    "Description": "Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!\n",
+    "Rating": 9,
+    "Price": 15.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_12.jpg",
+    "Instructor": "Dr. Angela Yu",
+    "Language": "English"
+  },
+  {
+    "Id": 34,
+    "Name": "Microservices with Node JS and React",
+    "Description": "Build, deploy, and scale an E-Commerce app using Microservices built with Node, React, Docker and Kubernetes\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2887266_c696_5.jpg",
+    "Instructor": "Stephen Grider",
+    "Language": "English"
+  },
+  {
+    "Id": 35,
+    "Name": "Learn and Understand NodeJS",
+    "Description": "Dive deep under the hood of NodeJS. Learn V8, Express, the MEAN stack, core Javascript concepts, and more.",
+    "Rating": 8,
+    "Price": 13.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/461160_8d87_6.jpg",
+    "Instructor": "Anthony Alicea",
+    "Language": "English"
+  },
+  {
+    "Id": 36,
+    "Name": "Learn to build an e-commerce app with .Net Core and Angular",
+    "Description": "Build a proof of concept e-commerce store using Angular, .Net Core and Stripe for payment processing",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2813723_c3e2.jpg",
+    "Instructor": "Neil Cummings",
+    "Language": "English"
+  },
+  {
+    "Id": 37,
+    "Name": "Complete guide to building an app with .Net Core and React",
+    "Description": "The complete guide to building an app from start to finish using ASP.NET Core, React (with Typescript) and Mobx\n",
+    "Rating": 9,
+    "Price": 12.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2472180_0143.jpg",
+    "Instructor": "Neil Cummings",
+    "Language": "English"
+  },
+  {
+    "Id": 38,
+    "Name": "Asp.Net Core : The Complete Guide To Build RESTful Api's",
+    "Description": "Learn to build secure RESTful Api's with Asp.Net Core, Entity Framework and C#\n",
+    "Rating": 10,
+    "Price": 10.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2192886_c4bf_4.jpg",
+    "Instructor": "Asfend Yar Hamid",
+    "Language": "English"
+  },
+  {
+    "Id": 39,
+    "Name": "ASP.NET Core 5.0 MVC The Beginners Guide To Becoming A Pro",
+    "Description": "Learn ASP.NET Core 5 with MVC and Entity Framework Core- Build a Real World Appointment Application using .NET 5 & Azure\n",
+    "Rating": 8,
+    "Price": 13.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3771684_19b5_2.jpg",
+    "Instructor": "Denis Panjuta",
+    "Language": "English"
+  },
+  {
+    "Id": 40,
+    "Name": "Mastering ASP.NET Core MVC 3.1 & 5.0 From Scratch Using C#",
+    "Description": "Learn How to build Modern Web Applications using ASP.NET Core MVC - Step By Step\n",
+    "Rating": 7,
+    "Price": 12.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3280090_9c51.jpg",
+    "Instructor": "Kameswara Sarma Uppuluri",
+    "Language": "English"
+  },
+  {
+    "Id": 41,
+    "Name": "RESTful API with ASP.NET Core Web API - Create and Consume",
+    "Description": "Build RESTful API with Authentication and learn how to consume them in ASP.NET Core in a real world application.\n",
+    "Rating": 7,
+    "Price": 10.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1480202_717c_6.jpg",
+    "Instructor": "Bhrugen Patel",
+    "Language": "English"
+  },
+  {
+    "Id": 42,
+    "Name": "Master Java Web Services and RESTful API with Spring Boot",
+    "Description": "Build Java Web Services & REST API - RESTful & SOAP - with Spring & Spring Boot. Learn REST API & SOAP Web Services Now!\n",
+    "Rating": 9,
+    "Price": 12.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1302610_5c62_4.jpg",
+    "Instructor": "in28Minutes Official",
+    "Language": "English"
+  },
+  {
+    "Id": 43,
+    "Name": "Full Stack Development with Java, MS SQL, Spring, Hibernate",
+    "Description": "All aspects of Web Development with Java, MS SQL, Spring and Spring Hibernate for anyone who wants to start from scratch\n",
+    "Rating": 7,
+    "Price": 18.99,
+    "CategoryId": 4,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3498598_0beb_4.jpg",
+    "Instructor": "Oak Academy",
+    "Language": "English"
+  },
+  {
+    "Id": 44,
+    "Name": "Developing RESTful Java Web Services using Spring boot",
+    "Description": "This course enables you to quickly get started with Spring boot applications\n",
+    "Rating": 8,
+    "Price": 12.99,
+    "CategoryId": 2,
+    "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2541578_6905_2.jpg",
+    "Instructor": "Vinod Kumar Kayartaya",
     "Language": "English"
   }
 ]

@@ -7,16 +7,16 @@ namespace API.Interfaces
 {
     public interface IProductRepository
     {
-        void Update(Products product);
+        void Update(Product product);
 
 
-        Task<IQueryable<Products>> GetProductsAsync();
+        Task<IQueryable<Product>> GetProductsAsync();
 
-        Task<Products> GetProductByIdAsync(int id);
+        Task<Product> GetProductByIdAsync(int id);
 
-        Task<Products> PostProductAsync(Products product);
+        Task<Product> PostProductAsync(Product product);
 
-        Task<Products> EditProductAsync(int id, Products product);
+        Task<Product> EditProductAsync(int id, Product product);
 
         Task<DeleteResponse> DeleteProductAsync(int id);
 

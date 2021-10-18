@@ -33,7 +33,7 @@ namespace API.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> PostProduct([FromBody] Products newProduct)
+        public async Task<IActionResult> PostProduct([FromBody] Product newProduct)
         {
             var product = await _unitOfWork.ProductRepository.PostProductAsync(newProduct);
             await this._unitOfWork.Complete();
@@ -42,7 +42,7 @@ namespace API.Controllers
 
         [Authorize]
         [HttpPut("[action]")]
-        public async Task<IActionResult> Edit(int query, [FromBody] Products newProduct)
+        public async Task<IActionResult> Edit(int query, [FromBody] Product newProduct)
         {
             var product = await _unitOfWork.ProductRepository.EditProductAsync(query, newProduct);
 

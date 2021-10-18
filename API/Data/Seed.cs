@@ -30,7 +30,7 @@ namespace API.Data
 
             var productsData = await System.IO.File.ReadAllTextAsync("Data/CourseData.json");
 
-            var products = JsonSerializer.Deserialize<List<Products>>(productsData);
+            var products = JsonSerializer.Deserialize<List<Product>>(productsData);
 
             foreach (var product in products)
             {

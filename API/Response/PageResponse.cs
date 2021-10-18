@@ -9,6 +9,6 @@ namespace API.DTOs
 
         public int? TotalRecords { get; set; }
 
-        public IQueryable<Products> Products { get; set; }
+        public IQueryable<Product> Products { get; set; }
     }
 }
