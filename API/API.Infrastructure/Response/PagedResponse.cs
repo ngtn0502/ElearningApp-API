@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace API.DTOs
 {
-    public class PageResponse
+    public class PagedResponse
     {
         public int? PageNumber { get; set; }
 

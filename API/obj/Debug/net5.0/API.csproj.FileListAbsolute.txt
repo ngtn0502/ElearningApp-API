@@ -272,8 +272,6 @@ E:\C# and .NET\TryToExpandApi\netApp - Part1\API\obj\Debug\net5.0\API.pdb
 E:\C# and .NET\TryToExpandApi\netApp - Part1\API\obj\Debug\net5.0\API.genruntimeconfig.cache
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\appsettings.Development.json
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\appsettings.json
-E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\Data\CategoriesData.json
-E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\Data\CourseData.json
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\API.exe
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\API.deps.json
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\API.runtimeconfig.json
@@ -340,3 +338,5 @@ E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\obj\Debug\net5.0\API.pdb
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\obj\Debug\net5.0\API.genruntimeconfig.cache
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\AutoMapper.dll
 E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\API.Domain\CategoriesData.json
+E:\C# and .NET\TryToExpandApi\tryToExpandAPI\API\bin\Debug\net5.0\API.Domain\CourseData.json

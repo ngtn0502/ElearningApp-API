@@ -5,7 +5,7 @@ namespace API.Extensions
 {
     public static class SwaggerServiceExtension
     {
-        public static IServiceCollection AddSwaggerServices (this IServiceCollection services)
+        public static IServiceCollection AddSwaggerServices(this IServiceCollection services)
         {
             services.AddControllers();
             services.AddSwaggerGen(c =>

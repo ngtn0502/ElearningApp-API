@@ -21,9 +21,9 @@ namespace API.Interfaces
 
         Task<DeleteResponse> DeleteProductAsync(int id);
 
-        Task<PageResponse> SearchProductAsync(string query, int? pageNumber, int? pageSize);
+        Task<PagedResponse> SearchProductAsync(string query, int? pageNumber, int? pageSize);
 
-        Task<PageResponse> GetAllProductsAsync(int category, int? pageNumber, int? pageSize);
+        Task<PagedResponse> GetAllProductsAsync(int category, int? pageNumber, int? pageSize);
 
     }
 }

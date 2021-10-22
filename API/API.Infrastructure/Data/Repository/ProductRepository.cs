@@ -4,10 +4,10 @@ using API.Entities;
 using API.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using API.Helpers;
 using API.ApiViewModels;
 using AutoMapper;
 using System.Collections.Generic;
+using API.Helpers;
 
 namespace API.Data
 {
@@ -35,9 +35,9 @@ namespace API.Data
         {
             var product = _context.Products.Include(s => s.Detail).ToList().Find(el => el.Id == id);
 
-            var productsToReturn = _mapper.Map<ProductDTOs>(product);
+            var productToReturn = _mapper.Map<ProductDTOs>(product);
 
-            return productsToReturn;
+            return productToReturn;
         }
 
 
@@ -123,7 +123,7 @@ namespace API.Data
             return returnedObj;
         }
 
-        async Task<PageResponse> IProductRepository.SearchProductAsync(string query, int? pageNumber, int? pageSize)
+        async Task<PagedResponse> IProductRepository.SearchProductAsync(string query, int? pageNumber, int? pageSize)
         {
 
             var products = await (from product in _context.Products
@@ -143,7 +143,7 @@ namespace API.Data
             return PagedList.CreatePagedResponse(productsToReturn, pageNumber, pageSize);
         }
 
-        async Task<PageResponse> IProductRepository.GetAllProductsAsync(int category, int? pageNumber, int? pageSize)
+        async Task<PagedResponse> IProductRepository.GetAllProductsAsync(int category, int? pageNumber, int? pageSize)
         {
 
             var products = await _context.Products.Include(s => s.Detail).ToListAsync();

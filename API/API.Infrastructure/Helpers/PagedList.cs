@@ -6,7 +6,7 @@ namespace API.Helpers
 {
     public class PagedList
     {
-        public static PageResponse CreatePagedResponse(List<ProductDTOs> products, int? pageNumber, int? pageSize)
+        public static PagedResponse CreatePagedResponse(List<ProductDTOs> products, int? pageNumber, int? pageSize)
         {
             int currentPageNumber = pageNumber ?? 1;
             int currentpageSize = pageSize ?? 6;
@@ -15,7 +15,7 @@ namespace API.Helpers
             .Skip((currentPageNumber - 1) * currentpageSize)
             .Take(currentpageSize);
 
-            var response = new PageResponse
+            var response = new PagedResponse
             {
                 PageNumber = currentPageNumber,
                 TotalRecords = products.Count,
