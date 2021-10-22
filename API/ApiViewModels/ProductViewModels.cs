@@ -1,11 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace API.Entities
+namespace API.ApiViewModels
 {
-    public class Product
+    public class ProductViewModels
     {
-
-        public int Id { get; set; }
 
         [Required]
         public string Name { get; set; }
@@ -31,6 +29,7 @@ namespace API.Entities
         [Required]
         public string Language { get; set; }
 
-        public ProductDetail Detail { get; set; }
+        [Required]
+        public string Detail { get; set; }
     }
 }

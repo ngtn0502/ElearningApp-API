@@ -34,7 +34,7 @@ namespace API.Data.Repository
 
         }
 
-        async Task<Category> ICategoryRepository.PostCategoryAsync(Category category)
+        async Task<Category> ICategoryRepository.CreateCategoryAsync(Category category)
         {
             await _context.Category.AddAsync(category);
             return category;

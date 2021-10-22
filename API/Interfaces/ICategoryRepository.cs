@@ -12,6 +12,6 @@ namespace API.Interfaces
 
         Task<Category> GetCategoryByIdAsync(int id);
 
-        Task<Category> PostCategoryAsync(Category category);
+        Task<Category> CreateCategoryAsync(Category category);
     }
 }

@@ -1,5 +1,6 @@
-using System.Linq;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using API.ApiViewModels;
 using API.DTOs;
 using API.Entities;
 
@@ -10,19 +11,19 @@ namespace API.Interfaces
         void Update(Product product);
 
 
-        Task<IQueryable<Product>> GetProductsAsync();
+        Task<IEnumerable<ProductDTOs>> GetProductsAsync();
 
-        Task<Product> GetProductByIdAsync(int id);
+        ProductDTOs GetProductByIdAsync(int id);
 
-        Task<Product> PostProductAsync(Product product);
+        Task<ProductDTOs> CreateProductAsync(ProductViewModels product);
 
-        Task<Product> EditProductAsync(int id, Product product);
+        Task<ProductDTOs> UpdateProductAsync(int id, ProductViewModels product);
 
         Task<DeleteResponse> DeleteProductAsync(int id);
 
         Task<PageResponse> SearchProductAsync(string query, int? pageNumber, int? pageSize);
 
-        Task<PageResponse> GetCoursesAsync(int category, int? pageNumber, int? pageSize);
+        Task<PageResponse> GetAllProductsAsync(int category, int? pageNumber, int? pageSize);
 
     }
 }

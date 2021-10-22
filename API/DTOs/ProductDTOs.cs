@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace API.Entities
+namespace API.DTOs
 {
-    public class Product
+    public class ProductDTOs
     {
 
         public int Id { get; set; }
@@ -31,6 +31,6 @@ namespace API.Entities
         [Required]
         public string Language { get; set; }
 
-        public ProductDetail Detail { get; set; }
+        public ProductDetailDTOs Detail { get; set; }
     }
 }

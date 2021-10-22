@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9hLqMjSB/7pCh0D/H7Er2WnutjGX+JUQBE3LFAllxFOtXMTE0U0zku5xE5ZBFZsxSYXqn/ruXYe7Khjhvb7k+A==",
+  "dgSpecHash": "upgP9eELRL+vB++Qfz/Il6gd3BhWDaJs5PVxBFyOdhyP6bsfcwre+a2EzPN2Zig5rk0XtagUQT1wvawre78zqg==",
   "success": true,
-  "projectFilePath": "E:\\C# and .NET\\netApp - Now\\API\\API.csproj",
+  "projectFilePath": "E:\\C# and .NET\\TryToExpandApi\\tryToExpandAPI\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.10\\microsoft.aspnetcore.authorization.5.0.10.nupkg.sha512",
@@ -48,6 +50,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.12.2\\system.identitymodel.tokens.jwt.6.12.2.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []

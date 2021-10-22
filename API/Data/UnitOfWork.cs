@@ -1,18 +1,22 @@
 using System.Threading.Tasks;
 using API.Data.Repository;
 using API.Interfaces;
+using AutoMapper;
 
 namespace API.Data
 {
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DataContext _context;
-        public UnitOfWork(DataContext context)
+        private readonly IMapper _mapper;
+
+        public UnitOfWork(DataContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
-        IProductRepository IUnitOfWork.ProductRepository => new ProductRepository(_context);
+        IProductRepository IUnitOfWork.ProductRepository => new ProductRepository(_context, _mapper);
 
         ICategoryRepository IUnitOfWork.CategoryRepository => new CategoryRepository(_context);
 

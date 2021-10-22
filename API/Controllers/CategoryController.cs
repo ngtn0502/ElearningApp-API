@@ -35,9 +35,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostCategory([FromBody] Category newCategory)
+        public async Task<IActionResult> CreateCategory([FromBody] Category newCategory)
         {
-            var category = await _unitOfWork.CategoryRepository.PostCategoryAsync(newCategory);
+            var category = await _unitOfWork.CategoryRepository.CreateCategoryAsync(newCategory);
 
             await this._unitOfWork.Complete();
 

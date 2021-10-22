@@ -8,7 +8,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2031086_e14b_2.jpg",
     "Instructor": "George Lomidze",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 3,
@@ -19,7 +20,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/364426_2991_6.jpg",
     "Instructor": "Anthony Alicea",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 4,
@@ -30,7 +32,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/382002_5d4a.jpg",
     "Instructor": "Mosh Hamedani",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 5,
@@ -41,7 +44,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1879018_95b6_3.jpg",
     "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 6,
@@ -52,7 +56,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/922484_52a1_8.jpg",
     "Instructor": "Andrew Mead",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 7,
@@ -63,7 +68,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/756150_c033_2.jpg",
     "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 8,
@@ -74,7 +80,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/947098_02ec_2.jpg",
     "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 9,
@@ -85,7 +92,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/806922_6310_3.jpg",
     "Instructor": "Mosh Hamedani",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 10,
@@ -96,7 +104,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/995016_ebf4_3.jpg",
     "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 11,
@@ -107,7 +116,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/437398_46c3_10.jpg",
     "Instructor": "Jonas Schmedtmann",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 12,
@@ -118,7 +128,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/480x270/625204_436a_3.jpg",
     "Instructor": "Colt Steele",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 13,
@@ -129,7 +140,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1563268_6bc6_3.jpg",
     "Instructor": "Asfend Yar Hamid",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 14,
@@ -140,7 +152,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1026604_790b_2.jpg",
     "Instructor": "Jonas Schmedtmann",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 15,
@@ -151,7 +164,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1406344_1d65_3.jpg",
     "Instructor": "Colt Steele",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 16,
@@ -162,7 +176,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1405632_6e6f_2.jpg",
     "Instructor": "365 Careers",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 18,
@@ -173,7 +188,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1672410_9ff1_5.jpg",
     "Instructor": "Jonas Schmedtmann",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 19,
@@ -184,7 +200,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/446134_383c_3.jpg",
     "Instructor": "Brad Hussey",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 20,
@@ -195,7 +212,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2508942_11d3_3.jpg",
     "Instructor": "Maximilian Schwarzmüller",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 21,
@@ -206,7 +224,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1470810_a8b0.jpg",
     "Instructor": "Andrew Mead",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 22,
@@ -217,7 +236,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/705264_caa9_11.jpg",
     "Instructor": "Stephen Grider",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 23,
@@ -228,7 +248,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1639836_a03e_5.jpg",
     "Instructor": "The Net Ninja (Shaun Pelling)",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 24,
@@ -239,7 +260,8 @@
     "CategoryId": 3,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2309602_ed2d_2.jpg",
     "Instructor": "Valentin Despa",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 25,
@@ -250,7 +272,8 @@
     "CategoryId": 3,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/4061318_8089_2.jpg",
     "Instructor": "Kalyan Reddy Daida",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 26,
@@ -261,7 +284,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1455016_0b2d_2.jpg",
     "Instructor": "Neil Cummings",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 27,
@@ -272,7 +296,8 @@
     "CategoryId": 1,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1123098_8299_3.jpg",
     "Instructor": "Angular University",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 28,
@@ -283,7 +308,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/567828_67d0.jpg",
     "Instructor": "Jose Portilla",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 29,
@@ -294,7 +320,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/543600_64d1_4.jpg",
     "Instructor": "Al Sweigart",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 30,
@@ -305,7 +332,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/258316_55e9_11.jpg",
     "Instructor": "Ben Tristem",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 31,
@@ -316,7 +344,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1581488_e3e1_2.jpg",
     "Instructor": "Denis Panjuta",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 32,
@@ -327,7 +356,8 @@
     "CategoryId": 5,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2776760_f176_6.jpg",
     "Instructor": "Dr. Angela Yu",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 33,
@@ -338,7 +368,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1565838_e54e_12.jpg",
     "Instructor": "Dr. Angela Yu",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 34,
@@ -349,7 +380,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2887266_c696_5.jpg",
     "Instructor": "Stephen Grider",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 35,
@@ -360,7 +392,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/461160_8d87_6.jpg",
     "Instructor": "Anthony Alicea",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 36,
@@ -371,7 +404,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2813723_c3e2.jpg",
     "Instructor": "Neil Cummings",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 37,
@@ -382,7 +416,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2472180_0143.jpg",
     "Instructor": "Neil Cummings",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 38,
@@ -393,7 +428,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2192886_c4bf_4.jpg",
     "Instructor": "Asfend Yar Hamid",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 39,
@@ -404,7 +440,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3771684_19b5_2.jpg",
     "Instructor": "Denis Panjuta",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 40,
@@ -415,7 +452,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3280090_9c51.jpg",
     "Instructor": "Kameswara Sarma Uppuluri",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 41,
@@ -426,7 +464,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1480202_717c_6.jpg",
     "Instructor": "Bhrugen Patel",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 42,
@@ -437,7 +476,8 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/1302610_5c62_4.jpg",
     "Instructor": "in28Minutes Official",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 43,
@@ -448,7 +488,8 @@
     "CategoryId": 4,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/3498598_0beb_4.jpg",
     "Instructor": "Oak Academy",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   },
   {
     "Id": 44,
@@ -459,6 +500,7 @@
     "CategoryId": 2,
     "ImageUrl": "https://img-c.udemycdn.com/course/240x135/2541578_6905_2.jpg",
     "Instructor": "Vinod Kumar Kayartaya",
-    "Language": "English"
+    "Language": "English",
+    "Detail": "Random-custom no-meaning course detail"
   }
 ]

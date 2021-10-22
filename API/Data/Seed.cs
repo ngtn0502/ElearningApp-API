@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Threading.Tasks;
+using API.ApiViewModels;
 using API.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,14 +31,34 @@ namespace API.Data
 
             var productsData = await System.IO.File.ReadAllTextAsync("Data/CourseData.json");
 
-            var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+            var products = JsonSerializer.Deserialize<List<ProductViewModels>>(productsData);
 
-            foreach (var product in products)
+            foreach (var newProduct in products)
             {
-                context.Products.Add(product);
+                Product product = new Product();
+
+                product.Name = newProduct.Name;
+                product.Description = newProduct.Description;
+                product.Rating = newProduct.Rating;
+                product.Price = newProduct.Price;
+                product.CategoryId = newProduct.CategoryId;
+                product.ImageUrl = newProduct.ImageUrl;
+                product.Instructor = newProduct.Instructor;
+                product.Language = newProduct.Language;
+
+
+                await context.Products.AddAsync(product);
+                context.SaveChanges();
+
+
+                ProductDetail productDetail = new ProductDetail();
+
+                productDetail.Detail = newProduct.Detail;
+                productDetail.ProductId = product.Id;
+
+                await context.ProductDetail.AddAsync(productDetail);
+                context.SaveChanges();
             }
-
-
             await context.SaveChangesAsync();
         }
 
